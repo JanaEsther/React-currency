@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './style.css';
 
 const currencies = {
@@ -7,7 +8,19 @@ const currencies = {
 };
 
 export const Rate = ({ from }) => {
-  const rate = currencies[from].CZK;
+  const [rate,setRate] = useState(currencies[from].CZK);
+
+ useEffect(() =>{
+   const fetchCurrency = async () => {
+     const response = await fetch(
+       `https://api.frankfurter.app/latest?from=${from}&to=CZK`);
+     const data = await response.json();
+     setRate(data.rates.CZK);
+   };
+
+   fetchCurrency();
+ },[from]);
+
   return (
     <div className="rate">
       <div className="rate__currency">1 {from}</div>
