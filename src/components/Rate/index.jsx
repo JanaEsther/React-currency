@@ -5,6 +5,9 @@ const currencies = {
   USD: { CZK: 23.823 },
   EUR: { CZK: 24.74 },
   GBP: { CZK: 29.067 },
+  JPY: { CZK: 0.1556 },
+  RUB: { CZK: 25.71 },
+  CHF: { CZK: 27.816}
 };
 
 export const Rate = ({ from }) => {
