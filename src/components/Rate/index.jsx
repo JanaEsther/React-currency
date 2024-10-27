@@ -7,7 +7,10 @@ const currencies = {
   GBP: { CZK: 29.067 },
   JPY: { CZK: 0.1556 },
   RUB: { CZK: 25.71 },
-  CHF: { CZK: 27.816}
+  CHF: { CZK: 27.816 },
+  BRL: { CZK: 4.111 },
+  ILS: { CZK: 6.1492 },
+  MXN: { CZK: 21.4408 },
 };
 
 export const Rate = ({ from }) => {

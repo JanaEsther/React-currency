@@ -27,6 +27,9 @@ export const HomePage = () => {
               <option value="JPY">Japonský jen</option>
               <option value="RUB">Ruský rubl</option>
               <option value="CHF">Švýcarský frank</option>
+              <option value="BRL">Brazilský real</option>
+              <option value="ILS">Izraelský šekel</option>
+              <option value="MXN">Mexické peso</option>
             </select>
           </div>
         </form>
